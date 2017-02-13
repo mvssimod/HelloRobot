@@ -1,3 +1,12 @@
 from gopigo import *
-enc_tgt(1,1,72)
-fwd()
+import time
+
+def shimmy():
+    for x in range(2):
+        right()
+        time.sleep(0.5)
+        left()
+        time.sleep(0.5)
+
+shimmy()
+stop()
